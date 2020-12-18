@@ -50,6 +50,10 @@ for (const entry of entries) {
 }
 
 console.log('----------------------');
+console.log(`Richmond Exists? ${Array.from(stateCapitals.values()).includes('Richmond')}`);
+console.log(`Richmond Exists? ${[...stateCapitals.values()].includes('Richmond')}`);
+
+console.log('----------------------');
 stateCapitals.clear();
 console.log(`The size after clear is ${stateCapitals.size}`)
 
